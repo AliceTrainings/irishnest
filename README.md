@@ -8,7 +8,8 @@ dynamic product detail pages, and replaceable placeholder visual assets. Phase
 validation schemas, and the private admin workspace. Phase 4 connects public
 forms to Supabase-backed lead, consultation, feasibility, and reservation
 workflows. Phase 5 adds the lightweight 3D explorer and product walkthrough
-experience.
+experience. Phase 6 adds SEO file conventions, public content-route coverage,
+error/loading states, deployment notes, and smoke-test support.
 
 ## Stack
 
@@ -102,6 +103,19 @@ Supabase.
 - `/homes/[slug]/walkthrough` provides a fullscreen walkthrough entry for every
   seeded product.
 - Product detail walkthrough links now point to the dedicated 3D route.
+
+## Phase 6 Additions
+
+- `app/sitemap.ts` and `app/robots.ts` generate sitemap and robots metadata.
+- Root metadata includes canonical, Open Graph, Twitter, and robots fields.
+- Public navigation routes now resolve: `/how-it-works`,
+  `/land-and-site-guide`, `/journal`, and `/about`.
+- Global `loading`, `error`, and `not-found` states provide accessible fallback
+  UI.
+- `DEPLOYMENT.md` documents environment variables, Supabase migration order,
+  validation commands, and content-positioning constraints.
+- `scripts/phase-6/smoke-routes.mjs` checks core public routes, SEO endpoints,
+  and legal pages against a running local server.
 
 ## Product Notes
 

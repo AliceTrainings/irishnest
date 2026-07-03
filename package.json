@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "format": "prettier --check ."
+    "format": "prettier --check .",
+    "smoke": "node scripts/phase-6/smoke-routes.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
