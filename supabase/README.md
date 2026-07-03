@@ -1,11 +1,13 @@
-# Supabase Phase 3
+# Supabase Phase 3 and 4
 
-This folder contains the Phase 3 database foundation for Irish Nest.
+This folder contains the database foundation for Irish Nest.
 
 ## Files
 
 - `migrations/202607030001_phase_3_schema.sql` creates the schema, enums,
   triggers, audit logging, indexes, and row-level security policies.
+- `migrations/202607030002_phase_4_public_flows.sql` adds admin follow-up tasks
+  for public reservation flow handoff.
 - `seed.sql` adds placeholder private suppliers, product categories, products,
   and journal posts.
 

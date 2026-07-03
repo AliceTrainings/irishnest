@@ -5,7 +5,9 @@ application shell, brand system, layout, reusable primitives, and seeded mock
 homepage data. Phase 2 adds the full public homepage sequence, collection page,
 dynamic product detail pages, and replaceable placeholder visual assets. Phase
 3 adds the Supabase database foundation, row-level security, typed clients,
-validation schemas, and the private admin workspace.
+validation schemas, and the private admin workspace. Phase 4 connects public
+forms to Supabase-backed lead, consultation, feasibility, and reservation
+workflows.
 
 ## Stack
 
@@ -71,6 +73,23 @@ The admin dashboard can render with fallback records when Supabase env vars are
 empty. When `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, and
 `SUPABASE_SERVICE_ROLE_KEY` are configured, server-side admin loaders read from
 Supabase.
+
+## Phase 4 Additions
+
+- `/request-a-quote`, `/book`, `/reserve`, `/reserve/confirmation`, and
+  `/contact` provide public form flows.
+- The homepage feasibility section now submits to Supabase through a server
+  action instead of a placeholder shell.
+- `app/actions/public-leads.ts` validates submissions server-side with Zod and
+  inserts through the Supabase anon client, relying on public insert-only RLS.
+- `lib/payments/reservation-payment.ts` abstracts the reservation payment
+  boundary. The MVP creates `pending_payment` reservations only and never claims
+  payment or reservation confirmation.
+- `supabase/migrations/202607030002_phase_4_public_flows.sql` adds
+  `admin_tasks` so reservation submissions can create a private follow-up task
+  when the service-role key is configured.
+- Placeholder privacy, terms, and refundable deposit terms pages are available
+  for the MVP legal links.
 
 ## Product Notes
 

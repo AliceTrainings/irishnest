@@ -67,6 +67,35 @@ export type Database = {
         };
         Update: Partial<Database["public"]["Tables"]["admin_users"]["Insert"]>;
       };
+      admin_tasks: {
+        Row: {
+          id: string;
+          title: string;
+          description: string | null;
+          status: string;
+          priority: string;
+          entity_table: string | null;
+          entity_id: string | null;
+          assigned_to: string | null;
+          due_at: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          title: string;
+          description?: string | null;
+          status?: string;
+          priority?: string;
+          entity_table?: string | null;
+          entity_id?: string | null;
+          assigned_to?: string | null;
+          due_at?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: Partial<Database["public"]["Tables"]["admin_tasks"]["Insert"]>;
+      };
       suppliers: {
         Row: {
           id: string;

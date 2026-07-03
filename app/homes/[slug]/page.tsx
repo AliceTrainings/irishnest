@@ -170,8 +170,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   Discuss {product.name}
                 </h2>
                 <p className="mt-4 text-sm leading-6 text-slate-950/65">
-                  Product details will prefill the lead form in Phase 4. No
-                  reservation is confirmed until payment is actually received.
+                  Product details prefill the lead form. No reservation is
+                  confirmed until payment is actually received.
                 </p>
                 <div className="mt-6 grid gap-3">
                   <ButtonLink href={`/request-a-quote?home=${product.slug}`}>
