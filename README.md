@@ -7,7 +7,8 @@ dynamic product detail pages, and replaceable placeholder visual assets. Phase
 3 adds the Supabase database foundation, row-level security, typed clients,
 validation schemas, and the private admin workspace. Phase 4 connects public
 forms to Supabase-backed lead, consultation, feasibility, and reservation
-workflows.
+workflows. Phase 5 adds the lightweight 3D explorer and product walkthrough
+experience.
 
 ## Stack
 
@@ -90,6 +91,17 @@ Supabase.
   when the service-role key is configured.
 - Placeholder privacy, terms, and refundable deposit terms pages are available
   for the MVP legal links.
+
+## Phase 5 Additions
+
+- `components/three/` contains a dynamically loaded React Three Fiber explorer,
+  procedural modular-home geometry, 3D hotspot buttons, camera transitions, and
+  static fallback UI.
+- The homepage featured explorer loads the 3D scene only near viewport and uses
+  a static image fallback for reduced-motion or missing WebGL support.
+- `/homes/[slug]/walkthrough` provides a fullscreen walkthrough entry for every
+  seeded product.
+- Product detail walkthrough links now point to the dedicated 3D route.
 
 ## Product Notes
 

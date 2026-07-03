@@ -247,9 +247,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </p>
               <Link
                 className="mt-8 inline-flex items-center gap-2 text-sm font-semibold underline decoration-slate-950/25 transition hover:decoration-slate-950"
-                href={`/homes/${product.slug}#walkthrough`}
+                href={`/homes/${product.slug}/walkthrough`}
               >
-                Open walkthrough entry point
+                Open 3D walkthrough
                 <Box aria-hidden="true" size={16} />
               </Link>
             </div>
