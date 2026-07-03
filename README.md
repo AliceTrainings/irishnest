@@ -2,7 +2,8 @@
 
 Premium modular homes platform for Ireland. Phase 1 establishes the Next.js
 application shell, brand system, layout, reusable primitives, and seeded mock
-homepage data.
+homepage data. Phase 2 adds the full public homepage sequence, collection page,
+dynamic product detail pages, and replaceable placeholder visual assets.
 
 ## Stack
 
@@ -38,6 +39,15 @@ npm run format
 - `components/ui/` contains low-level reusable primitives.
 - `lib/` contains site constants, utility helpers, and seeded mock catalogue data.
 - `public/brand/` contains temporary replaceable brand assets.
+
+## Phase 2 Additions
+
+- `/collection` lists all seeded modular-home concepts.
+- `/homes/[slug]` statically generates premium product detail pages.
+- `public/placeholders/` contains original SVG placeholder renders, interiors,
+  and floor plans that can be replaced from the future admin/media workflow.
+- The featured explorer is a performant hotspot preview. The full React Three
+  Fiber walkthrough is reserved for Phase 5.
 
 ## Product Notes
 

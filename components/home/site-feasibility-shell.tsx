@@ -1,6 +1,28 @@
 import { CalendarDays, Home, MapPin, ShieldCheck } from "lucide-react";
 
 export function SiteFeasibilityShell() {
+  const fields = [
+    { label: "Eircode", placeholder: "A65 F4E2", icon: MapPin, type: "text" },
+    {
+      label: "Desired home type",
+      placeholder: "Two-Bed Homes",
+      icon: Home,
+      type: "text",
+    },
+    {
+      label: "Timeline",
+      placeholder: "6-12 months",
+      icon: CalendarDays,
+      type: "text",
+    },
+    {
+      label: "Contact email",
+      placeholder: "hello@example.ie",
+      icon: ShieldCheck,
+      type: "email",
+    },
+  ];
+
   return (
     <section className="bg-stone px-5 py-24 md:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
@@ -16,22 +38,29 @@ export function SiteFeasibilityShell() {
           </p>
         </div>
         <form className="grid gap-4 bg-ivory p-5 shadow-xl shadow-slate-950/5 md:grid-cols-2 md:p-8">
-          {[
-            ["Eircode", "A65 F4E2", MapPin],
-            ["Desired home type", "Two-Bed Homes", Home],
-            ["Timeline", "6-12 months", CalendarDays],
-            ["Contact email", "hello@example.ie", ShieldCheck],
-          ].map(([label, placeholder, Icon]) => (
-            <label className="block" key={label as string}>
+          {fields.map(({ label, placeholder, icon: Icon, type }) => (
+            <label className="block" key={label}>
               <span className="text-sm font-semibold text-slate-950">
-                {label as string}
+                {label}
               </span>
-              <span className="mt-2 flex min-h-12 items-center gap-3 border border-slate-950/15 bg-warm-white px-4 text-slate-950/50">
+              <span className="mt-2 flex min-h-12 items-center gap-3 border border-slate-950/15 bg-warm-white px-4">
                 <Icon aria-hidden="true" size={18} />
-                {placeholder as string}
+                <input
+                  className="min-w-0 flex-1 bg-transparent text-sm text-slate-950 outline-none placeholder:text-slate-950/45"
+                  placeholder={placeholder}
+                  type={type}
+                />
               </span>
             </label>
           ))}
+          <label className="flex items-start gap-3 text-sm leading-6 text-slate-950/72 md:col-span-2">
+            <input className="mt-1 size-4 accent-forest" type="checkbox" />
+            <span>
+              I consent to Irish Nest saving my enquiry details and contacting
+              me about initial site feasibility. This does not confirm planning,
+              engineering, pricing, access, or delivery approval.
+            </span>
+          </label>
           <div className="md:col-span-2">
             <button
               className="min-h-12 w-full bg-forest px-5 text-sm font-semibold text-ivory transition hover:bg-forest-950"

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Logo } from "@/components/layout/logo";
 import { ButtonLink } from "@/components/ui/button-link";
@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 
 export function Navigation() {
   const [isSolid, setIsSolid] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setIsSolid(window.scrollY > 24);
@@ -54,11 +55,40 @@ export function Navigation() {
         <button
           className="inline-flex size-11 items-center justify-center border border-current/25 lg:hidden"
           type="button"
-          aria-label="Open navigation menu"
+          aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen((current) => !current)}
         >
-          <Menu aria-hidden="true" size={20} />
+          {isOpen ? (
+            <X aria-hidden="true" size={20} />
+          ) : (
+            <Menu aria-hidden="true" size={20} />
+          )}
         </button>
       </nav>
+      {isOpen ? (
+        <div className="border-t border-slate-950/10 bg-ivory px-5 py-5 text-slate-950 shadow-xl shadow-slate-950/10 lg:hidden">
+          <div className="mx-auto grid max-w-7xl gap-1">
+            {siteConfig.navItems.map((item) => (
+              <Link
+                className="px-2 py-3 text-base font-semibold"
+                href={item.href}
+                key={item.href}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+            <Link
+              className="mt-3 bg-forest px-4 py-3 text-center text-sm font-semibold text-ivory"
+              href={siteConfig.ctas.secondary.href}
+              onClick={() => setIsOpen(false)}
+            >
+              {siteConfig.ctas.secondary.label}
+            </Link>
+          </div>
+        </div>
+      ) : null}
     </header>
   );
 }
