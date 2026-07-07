@@ -31,7 +31,7 @@ export default function AdminSuppliersPage() {
         description="Approved suppliers can be managed by admins without exposing supplier names, branding, photography, or proprietary content on the public website."
       />
       <AdminPanel title="Suppliers">
-        <SearchToolbar placeholder="Search supplier name, contact, or status" />
+        <SearchToolbar placeholder="Filter supplier name, contact, or status" />
         <div className="overflow-x-auto">
           <table className="w-full min-w-[720px] text-left text-sm">
             <thead className="text-xs uppercase text-slate-950/48">

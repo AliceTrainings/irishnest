@@ -8,7 +8,7 @@ import { productCategories, products } from "@/lib/mock-data";
 export const metadata: Metadata = {
   title: "Collection",
   description:
-    "Explore the Irish Nest curated modular home collection, with indicative placeholder specifications for MVP validation.",
+    "Explore the Irish Nest curated modular home collection, with indicative concept specifications subject to supplier confirmation.",
 };
 
 export default function CollectionPage() {

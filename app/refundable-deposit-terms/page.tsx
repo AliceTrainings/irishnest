@@ -4,7 +4,7 @@ import { LegalPage } from "@/components/legal/legal-page";
 
 export const metadata: Metadata = {
   title: "Refundable Deposit Terms",
-  description: "Irish Nest refundable deposit placeholder terms for MVP flows.",
+  description: "Irish Nest refundable deposit terms for reservation requests.",
 };
 
 export default function RefundableDepositTermsPage() {

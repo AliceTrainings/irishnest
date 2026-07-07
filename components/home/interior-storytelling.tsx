@@ -10,8 +10,8 @@ export function InteriorStorytelling() {
           <div>
             <p className="eyebrow text-forest">Interior storytelling</p>
             <h2 className="mt-5 max-w-3xl font-serif text-4xl leading-none text-balance md:text-6xl">
-              Warm rooms, tactile finishes, and placeholders ready for real
-              photography.
+              Warm rooms, tactile finishes, and considered details across
+              kitchen, living, bedroom, bath, and workspace.
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-6 text-slate-950/65">

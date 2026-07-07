@@ -17,7 +17,7 @@ export default async function AdminQuotesPage() {
         description="Quotes and quote_items are ready in Supabase for supplier-confirmed proposals, with clear status handling before anything is presented as final."
       />
       <AdminPanel title="Quotes">
-        <SearchToolbar placeholder="Search quotes by number, customer, or product" />
+        <SearchToolbar placeholder="Filter quotes by number, customer, or product" />
         <div className="overflow-x-auto">
           <table className="w-full min-w-[760px] text-left text-sm">
             <thead className="text-xs uppercase text-slate-950/48">

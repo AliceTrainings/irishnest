@@ -74,7 +74,7 @@ export const products: Product[] = [
     shortDescription:
       "A compact insulated garden room for quiet work, creative practice, or a refined guest-ready retreat.",
     longDescription:
-      "Lark is a calm single-volume studio concept designed for gardens where every metre matters. The placeholder specification favours warm timber, generous glazing, and a simple services strategy that can be refined during consultation.",
+      "Lark is a calm single-volume studio concept designed for gardens where every metre matters. The specification favours warm Irish oak cladding, floor-to-ceiling double-glazed windows, and a straightforward services strategy that can be refined during consultation.",
     size: "Approx. 18 sq m",
     bedrooms: "Flexible studio",
     bedroomCount: 0,
@@ -150,7 +150,7 @@ export const products: Product[] = [
     shortDescription:
       "A focused office pod concept with a deeper plan for work, equipment, and short-stay flexibility.",
     longDescription:
-      "Ash is shaped for people who need a separate work setting without losing the texture of home. The placeholder layout allows a generous desk wall, a relaxed reading corner, and an optional compact services zone.",
+      "Ash is shaped for people who need a separate work setting without losing the texture of home. The layout allows a generous desk wall, a relaxed reading corner with feature lighting, and an optional compact services zone.",
     size: "Approx. 24 sq m",
     bedrooms: "Work and retreat",
     bedroomCount: 0,
@@ -406,7 +406,7 @@ export const products: Product[] = [
     shortDescription:
       "A larger family-scale modular home concept with a long living edge and practical storage.",
     longDescription:
-      "Meadow is a family-scale placeholder concept that explores a broader modular footprint, with three bedrooms, a practical services zone, and an open living space oriented to landscape.",
+      "Meadow is a family-scale concept that explores a broader modular footprint, with three generously proportioned bedrooms, a practical services zone, and an open living space oriented to capture the best natural light and views.",
     size: "Approx. 104 sq m",
     bedrooms: "3 bedrooms",
     bedroomCount: 3,
@@ -596,7 +596,7 @@ export const processSteps = [
   {
     title: "Explore",
     description:
-      "Compare layouts, sizes, finishes, and placeholder options before a formal quote.",
+      "Compare layouts, sizes, finishes, and configuration options before a formal quote.",
   },
   {
     title: "Discuss your site",

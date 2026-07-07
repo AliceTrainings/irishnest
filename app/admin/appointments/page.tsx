@@ -17,7 +17,7 @@ export default async function AdminAppointmentsPage() {
         description="Manage consultation requests, meeting type, preferred dates, and assigned sales follow-up."
       />
       <AdminPanel title="Consultation Appointments">
-        <SearchToolbar placeholder="Search appointments by name or email" />
+        <SearchToolbar placeholder="Filter appointments by name or email" />
         <div className="overflow-x-auto">
           <table className="w-full min-w-[680px] text-left text-sm">
             <thead className="text-xs uppercase text-slate-950/48">

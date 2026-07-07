@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: "/placeholders/rath-one-bed-home.svg",
         width: 1200,
         height: 630,
-        alt: "Irish Nest modular home placeholder render",
+        alt: "Irish Nest modular home concept render",
       },
     ],
   },

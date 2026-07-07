@@ -27,7 +27,7 @@ export default async function AdminEnquiriesPage() {
         }
       />
       <AdminPanel title="Enquiries">
-        <SearchToolbar placeholder="Search lead name, email, Eircode, or interest" />
+        <SearchToolbar placeholder="Filter lead name, email, Eircode, or interest" />
         <div className="overflow-x-auto">
           <table className="w-full min-w-[760px] text-left text-sm">
             <thead className="text-xs uppercase text-slate-950/48">

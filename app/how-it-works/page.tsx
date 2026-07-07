@@ -18,7 +18,7 @@ const steps = [
   },
   {
     title: "Explore",
-    body: "Review product pages, placeholder finishes, floor plans, and 3D walkthroughs before submitting an enquiry.",
+    body: "Review product pages, indicative finishes, floor plans, and 3D walkthroughs before submitting an enquiry.",
   },
   {
     title: "Discuss your site",

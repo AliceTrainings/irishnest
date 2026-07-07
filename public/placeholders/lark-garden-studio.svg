@@ -1,9 +1,10 @@
 <svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="1600" height="1100" fill="#F6F0E6"/>
-  <path d="M0 710C194 637 345 665 505 604C751 510 979 556 1168 633C1315 694 1453 674 1600 592V1100H0V710Z" fill="#748064"/>
-  <path d="M410 522L585 358H1026L1190 522V798H410V522Z" fill="#D8D0C3"/>
-  <path d="M358 528L584 294H1024L1248 528H1136L983 387H624L474 528H358Z" fill="#17382D"/>
-  <rect x="510" y="562" width="338" height="200" fill="#202421"/>
-  <rect x="896" y="562" width="184" height="200" fill="#FFF4D3"/>
-  <path d="M0 887H1600V1100H0V887Z" fill="#17382D"/>
+  <rect x="200" y="150" width="1200" height="800" rx="8" fill="#E8DFD0" stroke="#C4B8A5" stroke-width="2"/>
+  <rect x="240" y="200" width="1120" height="700" rx="4" fill="#D4C8B8"/>
+  <rect x="280" y="240" width="1040" height="620" rx="2" fill="#E0D5C5"/>
+  <text x="800" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#6B5D4F">Lark Garden Studio</text>
+  <text x="800" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#8B7D6F">Garden Rooms | 18 sq m</text>
+  <rect x="320" y="650" width="960" height="4" fill="#C4B8A5"/>
+  <text x="800" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#9B8D7F">Concept visualisation - warm Irish oak cladding, floor-to-ceiling glazing</text>
 </svg>

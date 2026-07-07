@@ -17,7 +17,7 @@ export default async function AdminReservationsPage() {
         description="Phase 3 stores reservation records and status. Phase 4 adds the public reservation flow, while a future payment provider can plug into the service boundary."
       />
       <AdminPanel title="Reservations">
-        <SearchToolbar placeholder="Search reservations by customer or product" />
+        <SearchToolbar placeholder="Filter reservations by customer or product" />
         <div className="overflow-x-auto">
           <table className="w-full min-w-[720px] text-left text-sm">
             <thead className="text-xs uppercase text-slate-950/48">

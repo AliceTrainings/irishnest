@@ -20,7 +20,7 @@ export default function AdminJournalPage() {
         description="Editorial posts use replaceable body JSON, status, cover asset references, SEO fields, and published timestamps."
       />
       <AdminPanel title="Journal Posts">
-        <SearchToolbar placeholder="Search posts by title or slug" />
+        <SearchToolbar placeholder="Filter posts by title or slug" />
         <div className="space-y-3">
           {posts.map((title) => (
             <article

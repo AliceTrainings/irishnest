@@ -27,7 +27,7 @@ export default async function AdminProductsPage() {
         }
       />
       <AdminPanel title="Products">
-        <SearchToolbar placeholder="Search products, slugs, or categories" />
+        <SearchToolbar placeholder="Filter products, slugs, or categories" />
         <div className="overflow-x-auto">
           <table className="w-full min-w-[760px] text-left text-sm">
             <thead className="text-xs uppercase text-slate-950/48">

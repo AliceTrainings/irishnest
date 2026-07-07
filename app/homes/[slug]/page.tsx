@@ -254,14 +254,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </Link>
             </div>
             <div className="border border-slate-950/10 bg-warm-white p-3">
-              <Image
-                className="aspect-[10/7] w-full object-cover"
-                src={product.floorPlan}
-                alt={`Indicative floor plan placeholder for ${product.name}`}
-                width={1000}
-                height={700}
-                loading="lazy"
-              />
+                  <Image
+                    className="aspect-[10/7] w-full object-cover"
+                    src={product.floorPlan}
+                    alt={`Indicative floor plan for ${product.name}`}
+                    width={1000}
+                    height={700}
+                    loading="lazy"
+                  />
             </div>
           </div>
         </section>

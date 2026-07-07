@@ -18,8 +18,8 @@ export default function TermsPage() {
       </p>
       <p>
         Product copy, dimensions, imagery, specifications, and floor plans are
-        placeholder MVP content until replaced and confirmed through the admin
-        workflow.
+        indicative concept content subject to supplier confirmation and site
+        assessment.
       </p>
     </LegalPage>
   );
